@@ -5,19 +5,19 @@ Model of cardiovascular model is able to describe  supine normal, tilt, valsalva
 
 Implemented in Modelica language. Requires:
 
-- [Modelica Standard library 3.2.3](https://github.com/modelica/ModelicaStandardLibrary/releases/tag/v3.2.3%2Bbuild.4) (Usually already a part of the Modelica environment)
-- [Physiolibrary 2.4.0](https://github.com/filip-jezek/Physiolibrary/releases/tag/v2.4)
+- [Modelica Standard library 4.0](https://github.com/modelica/ModelicaStandardLibrary/releases/tag/v4.0.0) (Usually already a part of the Modelica environment)
+- [Physiolibrary 2.5.0](https://github.com/filip-jezek/Physiolibrary/releases/tag/v2.5)
 
-The model has not been upgraded to MSL 4.0 just to support OpenModelica. Developed in Dymola 2021, tested in OpenModelica 1.18-dev66.
+Developed in Dymola 2021, tested in OpenModelica 1.17.
 
 # Installation
 - Install a Modelica tool, e.g. a latest version of the [OpenModelica](https://www.openmodelica.org/) (tested in [v1.17](https://build.openmodelica.org/omc/builds/windows/releases/1.17/0/64bit/) )
-  - The MSL (Modelica Standard Library) 3.2.3 should be already loaded or load it manually
-  - Current version is NOT compatible with MSL 4.0
-- Download Physiolibrary from https://github.com/filip-jezek/Physiolibrary/releases/tag/v2.4
+  - The MSL (Modelica Standard Library) 4.0 should be already loaded or load it manually
+  - Current version is **NOT compatible with MSL 3.2.3**!!
+- Download Physiolibrary from https://github.com/filip-jezek/Physiolibrary/releases/tag/v2.5
 - Load the Physiolibrary into the Modelica tool
 - Load the ADAN-86.mo model into the Modelica tool
-  - If MSL 4.0 is used instead, the Modelica tool (e.g. Dymola) should prompt for an automatic model update. If this does not work, grab a MSL 3.2.3 instead from e.g. https://github.com/modelica/ModelicaStandardLibrary/releases/tag/v3.2.3%2Bbuild.4
+  - If MSL 3.2.3 is loaded, the Modelica tool (e.g. Dymola) should provide a warning. Then get a MSL 4.0 instead from e.g. https://github.com/modelica/ModelicaStandardLibrary/releases/tag/v4.0.0
   
 # Model Simulation
 To simulate the following main use-cases, run:
